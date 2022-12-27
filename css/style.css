@@ -27,7 +27,10 @@ body {
     color: #ffffff;
     letter-spacing: .1rem;
 }
-
+p{
+    word-wrap:break-word; 
+    word-break:normal;
+}
 .logo {
     width: 5em;
     height: 5em;
@@ -100,6 +103,7 @@ body {
 
 .section-text {
     position: relative;
+    padding: 24px;
     text-align: center;
 }
 

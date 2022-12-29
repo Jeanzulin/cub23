@@ -32,21 +32,45 @@ p{
     word-break:normal;
     line-height:1.5;
 }
+.ml-1{
+    margin-left: 1rem;
+}
 .logo {
     width: 5em;
-    height: 5em;
+    height: 3em;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #070707cb;
+    background: url(../images/logo_black.png);
+    background-size: 5em 3em;
     text-align: center;
     line-height: 5em;
     font-size: 28px;
 }
-
+.scm{
+position: absolute;
+right: 90px;
+display: flex;
+z-index: 2;
+}
+.scm a{
+    display: block;
+    color: #fff;
+    font-size: 28px;
+    padding: 30px 10px;
+}
+.scm a:hover {
+    color: rgb(184, 184, 184);
+}
+@media (max-width: 992px) {
+    .scm a{
+        font-size: 26px;
+        padding: 32px 10px;
+    }
+}
 .section-img {
-    background: url(../img/img1.jpg);
+    background: url(../images/mountain.png);
     background-position: center center;
     background-size: cover;
     position: relative;
@@ -85,7 +109,7 @@ p{
 }
 
 .section-imgtext--text h2 {
-    margin-top: 64px;
+    margin-top: 56px;
 }
 
 @media (max-width: 992px) {
@@ -100,6 +124,10 @@ p{
         height: 50%;
         order: 1;
     }
+    .section-imgtext--text h2 {
+        margin-top: 32px;
+    }
+    
 }
 
 .section-text {

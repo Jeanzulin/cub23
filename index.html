@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cub23</title>
 
-
+    <link rel="stylesheet" type="text/css" href="font/all.min.css" />
     <link rel="stylesheet" type="text/css" href="css/normalized.css" />
     <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="css/hamburger.css" />
@@ -15,29 +15,43 @@
 </head>
 
 <body>
-    <!-- hambergur-->
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler" />
-        <div class="hamburger">
-            <div></div>
+    <nav>
+        <!-- social media-->
+        <div class="scm">
+            <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         </div>
-        <div class="menu" id="menu">
-            <div>
+        <!-- hambergur-->
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler" />
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu" id="menu">
                 <div>
-                    <ul>
-                        <li><a href="#p1">About</a></li>
-                        <li><a href="#p2">Menu</a></li>
-                        <li><a href="#p3">Contact</a></li>
-                    </ul>
+                    <div>
+                        <ul>
+                            <li><a href="#p0">Home</a></li>
+                            <li><a href="#p1">About</a></li>
+                            <li><a href="#p2">Chef</a></li>
+                            <li><a href="#p3">Chef</a></li>
+                            <li><a href="#p4">Menu</a></li>
+                            <li><a href="#p5">Event</a></li>
+                            <li><a href="#p6">Reservation</a></li>
+                            <li><a href="#p7">Contact</a></li>
+                            <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                <a class="ml-1" href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </nav>
     <div id="fullpage">
         <!-- 全圖 -->
-        <div class="section section-img" id="">
-            <div class="logo">LOGO</div>
+        <div class="section section-img" id="" data-anchor="p0">
+            <div class="logo"></div>
             <div id="scroll-down-animation">
                 <span class="mouse">
                     <span class="move"></span>
@@ -48,12 +62,12 @@
         <!-- 左圖右文 -->
         <div class="section section-imgtext" id="" data-anchor="p1">
             <div class="section-imgtext--img">
-                <img src="img/img2.jpg" alt="">
+                <img src="images/conservatory.png" alt="">
             </div>
             <div class="section-imgtext--text">
                 <div>
                     <h2>ABOUT</h2>
-                    <p>content contentcontentcontentcontentcontentcontentcontent</p>
+                    <p>餐廳介紹</p>
                 </div>
             </div>
         </div>
@@ -61,20 +75,57 @@
         <div class="section section-imgtext" id="" data-anchor="p2">
             <div class="section-imgtext--text">
                 <div>
-                    <h2>MENU</h2>
-                    <p>content contentcontentcontentcontentcontentcontentcontent</p>
+                    <h2>CHEF</h2>
+                    <p>主廚介紹</p>
                 </div>
             </div>
             <div class="section-imgtext--img">
-                <img src="img/img3.jpg" alt="">
+                <img src="images/chef1.png" alt="">
+            </div>
+        </div>
+        <!-- 左圖右文 -->
+        <div class="section section-imgtext" id="" data-anchor="p3">
+            <div class="section-imgtext--img">
+                <img src="images/chef2.png" alt="">
+            </div>
+            <div class="section-imgtext--text">
+                <div>
+                    <h2>CHEF</h2>
+                    <p>主廚介紹</p>
+                </div>
+            </div>
+        </div>
+        <!-- 右圖左文 -->
+        <div class="section section-imgtext" id="" data-anchor="p4">
+            <div class="section-imgtext--text">
+                <div>
+                    <h2>MENU</h2>
+                    <p>菜單</p>
+                </div>
+            </div>
+            <div class="section-imgtext--img">
+                <img src="images/corn.png" alt="">
             </div>
         </div>
         <!-- 文 -->
-        <div class="section section-text" data-anchor="p3">
-            <h2>標題標題標題標題標題</h2>
-            <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+        <div class="section section-text" data-anchor="p5">
+            <h2>Event</h2>
+            <p>活動內容：四月開幕</p>
+        </div>
+        <!-- 文 -->
+        <div class="section section-text" data-anchor="p6">
+            <h2>Reservation</h2>
+            <p>預約</p>
+        </div>
+        <!-- 文 -->
+        <div class="section section-text" data-anchor="p7">
+            <h2>Contact</h2>
+            <p>聯絡我們</p>
 
-            <footer>Website created by <a href="https://jeanzulin.github.io/" target="_blank">Jean Lin</a> © 2022
+            <footer>Website created by
+                <a href="https://jeanzulin.github.io/" target="_blank">
+                    Jean Lin
+                </a> © 2022
             </footer>
             <div id="goTop"><span>TOP</span></div>
         </div>
@@ -82,13 +133,13 @@
 
     <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
     <script type="text/javascript" src="js/fullpage.min.js"></script>
+    <script type="text/javascript" src="font/all.min.js"></script>
     <script>
         $(document).ready(function () {
             new fullpage('#fullpage', {
                 //options here
-                // sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke'],
                 licenseKey: 'gplv3-license',
-                anchors: ['p0', 'p1', 'p2', 'p3'],
+                anchors: ['p0', 'p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7'],
                 autoScrolling: true,
                 scrollHorizontally: true,
                 navigation: true,
@@ -104,7 +155,7 @@
             $("#goTop").click(function () {
                 fullpage_api.moveTo('p0', 1);
             });
-                        
+
         });
 
     </script>
